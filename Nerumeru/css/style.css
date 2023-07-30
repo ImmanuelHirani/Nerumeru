@@ -81,6 +81,17 @@
   .hero-headline {
     text-align: center !important;
   }
+  .hero-headline {
+    margin-top: -90px !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero-headline {
+    flex-direction: column-reverse;
+  }
+
   .hero {
     margin-top: 130px !important;
   }
