@@ -71,13 +71,40 @@
   background-color: #777777;
 }
 
+.login-btn {
+  width: 180px !important   ;
+  background-color: #255db4;
+}
+
+.nav-item-cart {
+  /* Menambahkan jarak di sekitar elemen li */
+  padding: 8px;
+}
+
+.nav-link-cart {
+  /* Menghilangkan garis bawah pada tautan */
+  text-decoration: none;
+  /* Mengubah warna teks menjadi hitam */
+  color: black;
+}
+
+.nav-link-cart.active {
+  /* Menambahkan background berwarna putih */
+  background-color: white;
+  /* Mengatur lebar dan tinggi untuk menciptakan bentuk bulat */
+  width: 40px;
+  height: 40px;
+  /* Membuat sudut-sudut elemen menjadi bulat */
+  border-radius: 50%;
+  /* Menengahkan ikon secara horizontal dan vertikal */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 @media screen and (max-width: 912px) {
   .navbar > .container > img {
-    width: 220px !important;
-  }
-
-  .navbar > .container > img {
-    width: 18% !important;
+    width: 14% !important;
   }
 
   .navbar-nav {
