@@ -68,14 +68,45 @@
                 >Home</a
               >
             </li>
-            <li class="nav-item mx-4">
+            <li class="nav-item mx-4 dropdown" id="productDropdown">
               <a
-                class="nav-link"
-                style="color: #42454a !important"
-                href="#project-1"
-                >Product</a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                aria-haspopup="true"
+                aria-expanded="false"
               >
+                Product
+              </a>
+              <ul
+                class="dropdown-menu border-0"
+                aria-labelledby="productDropdown"
+              >
+                <li>
+                  <a class="dropdown-item mx-2" href="#"
+                    >Bedding
+                    <img
+                      class=""
+                      src="../asset/img/pubu.png"
+                      alt=""
+                      width="45px"
+                      style="margin-left: 100px"
+                    />
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item mx-2" href="#"
+                    >Toys<img
+                      class=""
+                      src="../asset/img/neru ball.png"
+                      alt=""
+                      width="45px"
+                      style="margin-left: 130px"
+                  /></a>
+                </li>
+              </ul>
             </li>
+
             <li class="nav-item mx-4">
               <a
                 class="nav-link"
@@ -189,6 +220,24 @@
     integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
     crossorigin="anonymous"
   ></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const dropdownContainer = document.querySelector("#productDropdown");
+      const dropdownToggle = dropdownContainer.querySelector(
+        ".nav-link.dropdown-toggle"
+      );
+      const dropdownMenu = dropdownContainer.querySelector(".dropdown-menu");
+
+      dropdownContainer.addEventListener("mouseenter", function () {
+        dropdownMenu.classList.add("show-dropdown");
+      });
+
+      dropdownContainer.addEventListener("mouseleave", function () {
+        dropdownMenu.classList.remove("show-dropdown");
+      });
+    });
+  </script>
+
   <script src="js/fitur1.js"></script>
   <script src="js/fitur2.js"></script>
 </html>
