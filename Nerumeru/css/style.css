@@ -1,0 +1,124 @@
+.Hero-h1-2 {
+  line-height: 65px;
+}
+.H6-1-hero {
+  line-height: 35px;
+}
+
+.hero-btn {
+  background-color: #2762be;
+  border-radius: 0%;
+}
+
+/* Gaya awal untuk ikon sosial media */
+.sosial-media-hero i {
+  color: grey; /* Warna awal ikon */
+  transition: color 0.3s; /* Transisi saat berubah warna */
+}
+
+/* Gaya khusus untuk ikon Instagram */
+.bi-instagram:hover {
+  color: #e4405f; /* Warna asli Instagram (Merah muda) */
+}
+
+/* Gaya khusus untuk ikon Facebook */
+.bi-facebook:hover {
+  color: #3b5998; /* Warna asli Facebook (Biru) */
+}
+
+/* Gaya khusus untuk ikon WhatsApp */
+.bi-whatsapp:hover {
+  color: #25d366; /* Warna asli WhatsApp (Hijau) */
+}
+
+.container-btn-hero {
+  display: flex;
+  align-items: center !important;
+  width: fit-content;
+}
+
+.Arrow-hero {
+  width: 50px;
+  background-color: #2762be;
+  position: relative;
+  right: 12px;
+  transition: transform 0.3s ease;
+}
+
+.btn-primary {
+  /* Gaya default tombol */
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+  transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+.btn-primary:hover {
+  /* Gaya tombol saat di-hover */
+  background-color: #2762be !important;
+  color: white;
+}
+
+.btn-primary:hover .Arrow-hero {
+  /* Gaya panah saat tombol di-hover */
+  transform: translateX(20px);
+}
+
+.btn-primary:hover .text-buy {
+  color: white; /* Mengubah warna tulisan menjadi putih saat hover */
+}
+
+/* Gaya untuk elemen gambar */
+.hero-img-main {
+  max-width: 100% !important;
+  height: auto;
+  transition: transform 0.1s; /* Transisi untuk menghaluskan perubahan posisi */
+}
+
+@media screen and (max-width: 920px) {
+  .hero-headline {
+    text-align: center !important;
+  }
+  .hero {
+    margin-top: 130px !important;
+  }
+  .hero-headline {
+    font-size: 20px !important;
+  }
+
+  .hero-img {
+    display: flex;
+    justify-content: center;
+  }
+
+  .hero-shape {
+    width: 70% !important;
+    margin-top: -15px !important;
+  }
+
+  .hero-img-main {
+    width: 80%;
+    margin-top: 60px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .Hero-h1-2 {
+    line-height: 35px;
+  }
+
+  .h6-hero {
+    text-align: center !important;
+  }
+
+  .btn-primary {
+    margin: auto;
+  }
+
+  .sosial-media-hero {
+    text-align: center;
+  }
+}

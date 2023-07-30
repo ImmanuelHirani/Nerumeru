@@ -4,6 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Nerumeru</title>
+
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -22,10 +23,17 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
     />
+
+    <link rel="website icon" type="png" href="../asset/icon/LogoN1.png" />
     <link rel="stylesheet" href="../global/global.css" />
     <link rel="stylesheet" href="../global/navbar.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
   </head>
+
   <body>
     <nav class="navbar py-4 navbar-expand-lg fixed-top">
       <div class="container">
@@ -102,12 +110,85 @@
         </div>
       </div>
     </nav>
+    <main class="container">
+      <section class="hero" style="margin-top: 250px">
+        <div class="row">
+          <div class="col-lg-6 col-sm-12">
+            <h1 class="fw-bolder hero-headline" id="heroHeadline">
+              Pave The Way!
+              <span class="Hero-h1-2 fw-normal mt-5">
+                <br /><span id="changingText"></span>
+              </span>
+            </h1>
+
+            <div class="hero-img" style="margin-top: 30px">
+              <img
+                class="hero-shape"
+                src="../asset/img/Shape-hero.png"
+                alt=""
+              />
+            </div>
+
+            <h5 class="mt-4 fw-normal h6-hero">
+              Simple and Sleek Pave the Way <br />
+              <span class="H6-1-hero"> to Happy Pets!</span>
+            </h5>
+            <button class="btn bg-transparent border-0 btn-primary mt-4">
+              <span class="Arrow-hero rounded"
+                ><i
+                  class="bi bi-arrow-right hero-btn text-white"
+                  style="font-size: 30px"
+                ></i
+              ></span>
+
+              <span class="mx-4 fw-bold text-buy" style="font-size: 18px"
+                >Buy Now</span
+              >
+            </button>
+            <div
+              class="sosial-media-hero mt-4"
+              style="font-size: 30px !important"
+            >
+              <i class="bi bi-instagram"></i>
+              <i class="bi bi-facebook mx-4"></i>
+              <i class="bi bi-whatsapp"></i>
+            </div>
+          </div>
+          <div class="col-lg-6 col-sm-12 text-end">
+            <img
+              class="hero-img-main animated playful"
+              src="../asset/img/Hero-img.png"
+              alt=""
+            />
+          </div>
+        </div>
+      </section>
+      <sections class="why-us"></sections>
+    </main>
   </body>
+  <script>
+    var nav = document.querySelector("nav");
+    window.addEventListener("scroll", function () {
+      if (window.pageYOffset > 50) {
+        nav.classList.add("bg-white");
+      } else {
+        nav.classList.remove("bg-white", "shadow");
+      }
+    });
+  </script>
+  <script>
+    document
+      .getElementById("navbar-icon")
+      .addEventListener("click", function () {
+        var icon = this;
+        icon.classList.toggle("clicked");
+      });
+  </script>
   <script
     src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
     crossorigin="anonymous"
   ></script>
-
-  <script src="../global/navbar.js"></script>
+  <script src="js/fitur1.js"></script>
+  <script src="js/fitur2.js"></script>
 </html>

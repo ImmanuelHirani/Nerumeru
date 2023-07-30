@@ -102,9 +102,13 @@
   align-items: center;
 }
 
-@media screen and (max-width: 912px) {
+nav {
+  background-color: #f6f8fd;
+}
+
+@media screen and (max-width: 1180px) {
   .navbar > .container > img {
-    width: 14% !important;
+    width: 10.5% !important;
   }
 
   .navbar-nav {
