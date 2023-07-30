@@ -75,4 +75,20 @@
   .navbar > .container > img {
     width: 220px !important;
   }
+
+  .navbar > .container > img {
+    width: 18% !important;
+  }
+
+  .navbar-nav {
+    text-align: center;
+  }
+
+  .nav-item-cart {
+    margin: auto !important;
+  }
+
+  .nav-item-login {
+    margin: auto !important;
+  }
 }
