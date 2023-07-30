@@ -2,10 +2,6 @@
   width: min-content;
 }
 
-.navbar {
-  background-color: #131313;
-}
-
 .nav-item a {
   color: #131313 !important;
   font-weight: bold;
@@ -73,10 +69,6 @@
 /* Color of Toggler when collapsed */
 .navbar-toggler.collapsed .toggler-icon {
   background-color: #777777;
-}
-
-.navbar {
-  background-color: #131313;
 }
 
 @media screen and (max-width: 912px) {
