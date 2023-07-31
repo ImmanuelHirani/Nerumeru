@@ -78,12 +78,18 @@
 }
 
 .dropdown-menu {
-  width: 300px;
+  width: 250px;
   margin: auto;
 }
 
 .row > .col {
   margin-left: -20px;
+}
+
+.Our-journey > .row {
+  display: flex;
+  justify-content: center;
+  align-items: center !important;
 }
 
 @media screen and (max-width: 920px) {
@@ -149,5 +155,18 @@
 
   .why-us > .row > h1 {
     text-align: center;
+  }
+
+  .Our-journey-left {
+    text-align: center;
+  }
+
+  .Our-journey-left > h2 {
+    font-size: 30px !important;
+  }
+
+  .Our-journey-right > h6 {
+    font-size: 15px !important;
+    margin-top: 40px;
   }
 }
