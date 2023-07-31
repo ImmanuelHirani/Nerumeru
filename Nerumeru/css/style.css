@@ -39,6 +39,7 @@
 
 .Arrow-hero {
   width: 50px;
+
   background-color: #2762be;
   position: relative;
   right: 12px;
@@ -82,7 +83,7 @@
   margin: auto;
 }
 
-.row > .col {
+.row-whyus > .col-whyus {
   margin-left: -20px;
 }
 
