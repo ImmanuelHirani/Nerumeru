@@ -77,6 +77,11 @@
   transition: transform 0.1s; /* Transisi untuk menghaluskan perubahan posisi */
 }
 
+.dropdown-menu {
+  width: 300px;
+  margin: auto;
+}
+
 @media screen and (max-width: 920px) {
   .hero-headline {
     text-align: center !important;
@@ -110,7 +115,7 @@
   }
 
   .hero-img-main {
-    width: 80%;
+    width: 70%;
     margin-top: 60px;
     display: block;
     margin-left: auto;
