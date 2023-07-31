@@ -2,7 +2,7 @@ const texts = [
   "Unleash Joyful Moments",
   "Empower Your Pet's",
   "Happy pets Simple Care",
-  "Ride Towards a future",
+  "Ride Towards Future",
   "Caring for Your Belove Pets ",
 ];
 

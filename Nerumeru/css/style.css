@@ -82,6 +82,10 @@
   margin: auto;
 }
 
+.row > .col {
+  margin-left: -20px;
+}
+
 @media screen and (max-width: 920px) {
   .hero-headline {
     text-align: center !important;
@@ -135,6 +139,15 @@
   }
 
   .sosial-media-hero {
+    text-align: center;
+  }
+
+  .row > .col {
+    margin: auto;
+    margin-left: 0;
+  }
+
+  .why-us > .row > h1 {
     text-align: center;
   }
 }
