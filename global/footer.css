@@ -7,3 +7,17 @@
 .sosial-media-hero i {
   margin: 5px; /* Set left and right margin for the icons */
 }
+
+@media screen and (max-width: 920px) {
+  .dummy-container-footer {
+    margin-top: 50px;
+  }
+
+  .col-img-footer {
+    margin-bottom: 50px;
+  }
+
+  .col-img-footer > img {
+    width: 60%;
+  }
+}
