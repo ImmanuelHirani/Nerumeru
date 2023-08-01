@@ -93,6 +93,18 @@
   align-items: center !important;
 }
 
+.btn-bedding {
+  background-color: #2762be;
+  color: white;
+  width: 200px;
+}
+
+.btn-bedding:hover {
+  background-color: transparent;
+  border: 3px solid #2762be;
+  color: #3b5998;
+}
+
 @media screen and (max-width: 920px) {
   .hero-headline {
     text-align: center !important;
@@ -169,5 +181,18 @@
   .Our-journey-right > h6 {
     font-size: 15px !important;
     margin-top: 40px;
+  }
+
+  .txt-cat {
+    text-align: center !important;
+  }
+
+  .card {
+    display: block;
+    margin: auto;
+  }
+
+  .card > img {
+    width: 250px;
   }
 }
