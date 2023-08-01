@@ -1,0 +1,9 @@
+.row-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sosial-media-hero i {
+  margin: 5px; /* Set left and right margin for the icons */
+}
