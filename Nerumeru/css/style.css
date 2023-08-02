@@ -195,4 +195,8 @@
   .card > img {
     width: 250px;
   }
+
+  .why-us {
+    text-align: center;
+  }
 }
