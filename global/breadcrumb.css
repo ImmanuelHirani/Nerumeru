@@ -1,0 +1,14 @@
+.breadcrumb-item + .breadcrumb-item::before {
+  color: rgb(0, 0, 0);
+}
+
+.breadcrumb-item a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+.breadcrumb-item.active {
+  color: #2762be;
+  font-weight: bold;
+}
