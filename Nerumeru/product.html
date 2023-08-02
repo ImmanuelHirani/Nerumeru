@@ -141,9 +141,14 @@
         </div>
       </div>
     </nav>
+
     <main class="container">
       <section class="crsl mb-5">
-        <div id="carouselExampleIndicators" class="carousel slide">
+        <div
+          id="carouselExampleIndicators"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
           <div class="carousel-indicators">
             <button
               type="button"
@@ -167,21 +172,21 @@
             ></button>
           </div>
           <div class="carousel-inner">
-            <div class="carousel-item active">
+            <div class="carousel-item active" data-bs-interval="2000">
               <img
                 src="../asset/img/Carousel.jpg"
                 class="d-block w-100"
                 alt="..."
               />
             </div>
-            <div class="carousel-item">
+            <div class="carousel-item" data-bs-interval="2000">
               <img
                 src="../asset/img/Carousel.jpg"
                 class="d-block w-100"
                 alt="..."
               />
             </div>
-            <div class="carousel-item">
+            <div class="carousel-item" data-bs-interval="2000">
               <img
                 src="../asset/img/Carousel.jpg"
                 class="d-block w-100"
@@ -189,22 +194,6 @@
               />
             </div>
           </div>
-          <button
-            class="carousel-control-prev"
-            type="button"
-            data-bs-target="#carouselExampleIndicators"
-            data-bs-slide="prev"
-          >
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button
-            class="carousel-control-next"
-            type="button"
-            data-bs-target="#carouselExampleIndicators"
-            data-bs-slide="next"
-          >
-            <span class="visually-hidden">Next</span>
-          </button>
         </div>
       </section>
       <section class="catalog-product">
@@ -423,7 +412,7 @@
     var nav = document.querySelector("nav");
     window.addEventListener("scroll", function () {
       if (window.pageYOffset > 50) {
-        nav.classList.add("bg-white");
+        nav.classList.add("bg-white", "shadow");
       } else {
         nav.classList.remove("bg-white", "shadow");
       }
