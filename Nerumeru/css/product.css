@@ -31,3 +31,14 @@
 .instagram {
   margin-top: 150px;
 }
+
+@media screen and (max-width: 920px) {
+  .choose-by-categories {
+    text-align: center;
+  }
+
+  /* All Products */
+  .all-products {
+    text-align: center;
+  }
+}
