@@ -1,0 +1,33 @@
+/* Carousel */
+.crsl {
+  margin-top: 170px !important;
+}
+.carousel .carousel-indicators button {
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  background-color: #2762be;
+}
+.carousel-inner {
+  border-radius: 10px 10px 10px 10px;
+}
+
+/* Catalog Product */
+.catalog-product {
+  margin-top: 150px;
+}
+
+/* Choose By Categories */
+.choose-by-categories {
+  margin-top: 150px;
+}
+
+/* All Products */
+.all-products {
+  margin-top: 150px;
+}
+
+/* Instagram */
+.instagram {
+  margin-top: 150px;
+}
