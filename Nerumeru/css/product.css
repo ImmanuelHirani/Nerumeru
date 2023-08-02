@@ -22,18 +22,6 @@
   margin-top: 150px;
 }
 
-.btn-categories {
-  background-color: #2762be;
-  color: white;
-  width: 200px;
-}
-
-.btn-categories:hover {
-  background-color: transparent;
-  border: 3px solid #2762be;
-  color: #3b5998;
-}
-
 /* All Products */
 .all-products {
   margin-top: 150px;
