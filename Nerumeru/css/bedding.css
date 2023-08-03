@@ -23,7 +23,6 @@
 }
 
 @media screen and (max-width: 920px) {
-  /* Card */
   .card {
     display: block;
     margin: auto;
