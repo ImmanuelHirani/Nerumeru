@@ -4,7 +4,7 @@
 }
 
 .collections {
-  margin-top: 150px;
+  margin-top: 50px;
 }
 
 /* Neru One */
@@ -23,6 +23,16 @@
 }
 
 @media screen and (max-width: 920px) {
+  /* Card */
+  .card {
+    display: block;
+    margin: auto;
+  }
+
+  .card > img {
+    width: 250px;
+  }
+
   .neru-one {
     text-align: center;
   }
