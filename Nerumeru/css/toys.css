@@ -1,5 +1,5 @@
-/* Bedding */
-.bedding {
+/* toys */
+.toys {
   margin-top: 170px !important;
 }
 
@@ -40,7 +40,7 @@
     text-align: center !important;
   }
 
-  .bedding > h2 {
+  .toys > h2 {
     font-size: 30px !important;
   }
 
