@@ -1,0 +1,33 @@
+/* Bedding */
+.bedding {
+  margin-top: 170px !important;
+}
+
+.collections {
+  margin-top: 150px;
+}
+
+/* Neru One */
+.neru-one {
+  margin-top: 150px;
+}
+/* Neru Two */
+.neru-two {
+  margin-top: 150px;
+  text-align: end;
+}
+
+/* Instagram */
+.instagram {
+  margin-top: 150px;
+}
+
+@media screen and (max-width: 920px) {
+  .neru-one {
+    text-align: center;
+  }
+
+  .neru-two {
+    text-align: center !important;
+  }
+}
