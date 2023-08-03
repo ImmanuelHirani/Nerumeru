@@ -33,6 +33,9 @@
 }
 
 @media screen and (max-width: 920px) {
+  .crsl {
+    margin-top: 100px !important;
+  }
   .card {
     display: block;
     margin: auto;
@@ -42,28 +45,33 @@
     width: 250px;
   }
 
+  .catalog-product {
+    margin-top: 10px;
+  }
+
   .choose-by-categories {
     text-align: center;
+    margin-top: 65px;
   }
 
   .all-products {
     text-align: center;
+    margin-top: 65px;
   }
 
-  .catalog-product > h2 {
-    font-size: 30px !important;
+  .cat-h2-headline {
+    font-size: 22.5px;
+  }
+  .cat-h6-headline {
+    font-size: 12.5px;
   }
 
-  .catalog-product > h6 {
-    font-size: 15px !important;
+  .h2-cbc {
+    font-size: 20px;
   }
 
-  .choose-by-categories > h2 {
-    font-size: 30px !important;
-  }
-
-  .all-products > h2 {
-    font-size: 30px !important;
+  .h2-apd {
+    font-size: 20px !important;
   }
 
   .instagram > h2 {
