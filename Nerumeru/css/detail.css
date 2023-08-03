@@ -1,0 +1,24 @@
+@media screen and (max-width: 920px) {
+  .small-img > img {
+    width: 100%;
+  }
+
+  .container-text-detail {
+    margin-left: 0px !important;
+  }
+}
+
+.stock-number {
+  display: flex;
+}
+
+.stock-number-shape {
+  width: 40px;
+  color: white;
+  text-align: center !important;
+  background-color: #2762be;
+}
+
+.container-text-detail {
+  margin-left: 50px;
+}
