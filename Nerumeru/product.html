@@ -66,7 +66,7 @@
                 class="nav-link active"
                 style="color: #42454a !important"
                 aria-current="page"
-                href="#home"
+                href="index.html"
                 >Home</a
               >
             </li>
@@ -428,7 +428,7 @@
     var nav = document.querySelector("nav");
     window.addEventListener("scroll", function () {
       if (window.pageYOffset > 50) {
-        nav.classList.add("bg-white");
+        nav.classList.add("bg-white", "shadow");
       } else {
         nav.classList.remove("bg-white", "shadow");
       }
