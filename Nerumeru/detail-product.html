@@ -336,22 +336,149 @@
         </div>
       </section>
       <section class="other-product" style="margin-top: 150px">
-        <div class="row">
-          <div class="headline mb-4">
-            <h2 class="fw-bold">You may also like</h2>
-            <img src="../asset/img/Why-us.png" alt="" width="" />
+        <div class="headline">
+          <h2 class="fw-bold">You May Also Likes</h2>
+          <img src="../asset/img/Why-us.png" alt="" />
+        </div>
+        <div
+          id="Otherproduct"
+          class="carousel slide carousel-fade"
+          data-bs-ride="carousel"
+          style="margin-top: -50px"
+        >
+          <div class="carousel-inner">
+            <!-- Carousel Item 1 -->
+            <div class="carousel-item active">
+              <div class="row" style="margin-top: 100px">
+                <div
+                  class="col-md-6 col-sm-12 col-lg-3 rounded mb-4 text-center"
+                >
+                  <div class="card card-container border-0 shadow">
+                    <img
+                      class="rounded"
+                      src="../asset/img/Categories-Trolly.png"
+                      width="100%"
+                      alt=""
+                    />
+                  </div>
+                  <button class="btn btn-detail mt-2">See Details</button>
+                </div>
+                <div
+                  class="col-md-6 col-sm-12 col-lg-3 rounded mb-4 text-center"
+                >
+                  <div class="card card-container border-0 shadow">
+                    <img
+                      class="rounded"
+                      src="../asset/img/Categories-Pillow.png"
+                      width="100%"
+                      alt=""
+                    />
+                  </div>
+                  <button class="btn btn-detail mt-2">See Details</button>
+                </div>
+                <div
+                  class="col-md-6 col-sm-12 col-lg-3 rounded mb-4 text-center"
+                >
+                  <div class="card card-container border-0 shadow">
+                    <img
+                      class="rounded"
+                      src="../asset/img/Categories-Disinfectant.png"
+                      width="100%"
+                      alt=""
+                    />
+                  </div>
+                  <button class="btn btn-detail mt-2">See Details</button>
+                </div>
+                <div
+                  class="col-md-6 col-sm-12 col-lg-3 rounded mb-4 text-center"
+                >
+                  <div class="card card-container border-0 shadow">
+                    <img
+                      class="rounded"
+                      src="../asset/img/Categories-Bedding.png"
+                      width="100%"
+                      alt=""
+                    />
+                  </div>
+                  <button class="btn btn-detail mt-2">See Details</button>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row" style="margin-top: 100px">
+                <div
+                  class="col-md-6 col-sm-12 col-lg-3 rounded mb-4 text-center"
+                >
+                  <div class="card card-container border-0 shadow">
+                    <img
+                      class="rounded"
+                      src="../asset/img/Categories-Bedding.png"
+                      width="100%"
+                      alt=""
+                    />
+                  </div>
+                  <button class="btn btn-detail mt-2">See Details</button>
+                </div>
+                <div
+                  class="col-md-6 col-sm-12 col-lg-3 rounded mb-4 text-center"
+                >
+                  <div class="card card-container border-0 shadow">
+                    <img
+                      class="rounded"
+                      src="../asset/img/Categories-Disinfectant.png"
+                      width="100%"
+                      alt=""
+                    />
+                  </div>
+                  <button class="btn btn-detail mt-2">See Details</button>
+                </div>
+                <div
+                  class="col-md-6 col-sm-12 col-lg-3 rounded mb-4 text-center"
+                >
+                  <div class="card card-container border-0 shadow">
+                    <img
+                      class="rounded"
+                      src="../asset/img/Categories-Pillow.png"
+                      width="100%"
+                      alt=""
+                    />
+                  </div>
+                  <button class="btn btn-detail mt-2">See Details</button>
+                </div>
+                <div
+                  class="col-md-6 col-sm-12 col-lg-3 rounded mb-4 text-center"
+                >
+                  <div class="card card-container border-0 shadow">
+                    <img
+                      class="rounded"
+                      src="../asset/img/Categories-Trolly.png"
+                      width="100%"
+                      alt=""
+                    />
+                  </div>
+                  <button class="btn btn-detail mt-2">See Details</button>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="col-lg-3">
-            <img src="../asset/img/Categories.png" alt="" />
-          </div>
-          <div class="col-lg-3">
-            <img src="../asset/img/Categories.png" alt="" />
-          </div>
-          <div class="col-lg-3">
-            <img src="../asset/img/Categories.png" alt="" />
-          </div>
-          <div class="col-lg-3">
-            <img src="../asset/img/Categories.png" alt="" />
+          <div class="slide-product text-center">
+            <i
+              class="fa-solid fa-circle-chevron-left fa-2x"
+              aria-hidden="true"
+              data-bs-slide="prev"
+              type="button"
+              data-bs-target="#Otherproduct"
+              style="color: #2762be"
+            ></i>
+
+            <i
+              class="fa-solid fa-circle-chevron-right fa-2x mx-2"
+              aria-hidden="true"
+              data-bs-slide="next"
+              type="button"
+              data-bs-target="#Otherproduct"
+              style="color: #2762be"
+            ></i>
           </div>
         </div>
       </section>
@@ -490,7 +617,21 @@
       }
     }
   </script>
-
+  <script>
+    // Function to add delay between slide transitions
+    function setCarouselSlideDelay(delay) {
+      var carouselItems = document.getElementsByClassName("carousel-item");
+      for (var i = 0; i < carouselItems.length; i++) {
+        carouselItems[i].style.transitionDelay = delay + "ms";
+      }
+    }
+  </script>
+  <script>
+    // Set the slide delay after the page is loaded
+    document.addEventListener("DOMContentLoaded", function () {
+      setCarouselSlideDelay(100); // Set the delay time (in milliseconds)
+    });
+  </script>
   <script src="js/fitur1.js"></script>
   <script src="js/fitur2.js"></script>
 </html>
