@@ -6,6 +6,10 @@
   .container-text-detail {
     margin-left: 0px !important;
   }
+
+  .container > .detail-product {
+    margin-top: 150px !important;
+  }
 }
 
 .stock-number {
@@ -21,4 +25,8 @@
 
 .container-text-detail {
   margin-left: 50px;
+}
+
+.accordion-button {
+  background-color: #2762be !important;
 }

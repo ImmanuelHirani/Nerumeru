@@ -120,6 +120,11 @@ nav {
   animation: slideDown 0.3s;
 }
 
+.dropdown-menu {
+  width: 250px;
+  margin: auto;
+}
+
 @keyframes slideDown {
   from {
     opacity: 0;
