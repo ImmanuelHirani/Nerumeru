@@ -30,3 +30,25 @@
 .accordion-button {
   background-color: #2762be !important;
 }
+
+.cart-item-container {
+  display: flex;
+  align-items: center;
+}
+
+.input-group {
+  display: flex;
+  align-items: center;
+  max-width: 125px;
+  margin-bottom: 15px; /* Hapus margin bawah pada input group */
+}
+
+.input-group .input-group-btn {
+  display: flex;
+}
+
+/* Atur margin agar tombol dan input group tidak terlalu dekat */
+.cart-item-container button,
+.cart-item-container .input-group {
+  margin-right: 10px;
+}

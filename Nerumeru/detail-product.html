@@ -197,6 +197,7 @@
           <div class="col-lg-6 col-sm-12 col-md-6 mt-5">
             <div class="container-text-detail">
               <h2 class="fw-bold">Neru One - Silver Grey</h2>
+              <hr />
               <div class="star" style="margin-top: 25px">
                 <span class="fw-bold">4</span>
                 <i class="bi bi-star-fill" style="color: #2762be"></i>
@@ -212,8 +213,46 @@
               </div>
               <p class="fw-medium">Max buy per - Item (2)</p>
               <p class="fw-medium">Weight 500g</p>
+              <div class="input-group border">
+                <span class="input-group-btn">
+                  <button
+                    type="button"
+                    class="btn btn-default btn-number"
+                    onclick="decreaseValue()"
+                    data-type="minus"
+                    data-field="quant[1]"
+                  >
+                    <i class="bi bi-dash"></i>
+                  </button>
+                </span>
+                <input
+                  id="quantity"
+                  type="text"
+                  name="quant[1]"
+                  class="form-control input-number"
+                  value="1"
+                  min="1"
+                  max="10"
+                />
+                <span class="input-group-btn">
+                  <button
+                    type="button"
+                    class="btn btn-default btn-number"
+                    onclick="increaseValue()"
+                    data-type="plus"
+                    data-field="quant[1]"
+                  >
+                    <i class="bi bi-plus"></i>
+                  </button>
+                </span>
+              </div>
+              <hr />
+              <p class="Subtotal fw-light">
+                Sub Total<span class="mx-4 fw-bold"> Rp 500.000</span>
+              </p>
+              <hr />
               <button
-                class="btn text-white mb-3 fw-medium"
+                class="btn btn-cart-mobile text-white mb-3 fw-medium"
                 style="background-color: #2762be"
               >
                 <i
@@ -293,6 +332,26 @@
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+      <section class="other-product" style="margin-top: 150px">
+        <div class="row">
+          <div class="headline mb-4">
+            <h2 class="fw-bold">You may also like</h2>
+            <img src="../asset/img/Why-us.png" alt="" width="" />
+          </div>
+          <div class="col-lg-3">
+            <img src="../asset/img/Categories.png" alt="" />
+          </div>
+          <div class="col-lg-3">
+            <img src="../asset/img/Categories.png" alt="" />
+          </div>
+          <div class="col-lg-3">
+            <img src="../asset/img/Categories.png" alt="" />
+          </div>
+          <div class="col-lg-3">
+            <img src="../asset/img/Categories.png" alt="" />
           </div>
         </div>
       </section>
@@ -411,6 +470,25 @@
         dropdownMenu.classList.remove("show-dropdown");
       });
     });
+  </script>
+  <script>
+    function increaseValue() {
+      var value = parseInt(document.getElementById("quantity").value, 10);
+      value = isNaN(value) ? 0 : value;
+      if (value < 10) {
+        value++;
+        document.getElementById("quantity").value = value;
+      }
+    }
+
+    function decreaseValue() {
+      var value = parseInt(document.getElementById("quantity").value, 10);
+      value = isNaN(value) ? 0 : value;
+      if (value > 1) {
+        value--;
+        document.getElementById("quantity").value = value;
+      }
+    }
   </script>
 
   <script src="js/fitur1.js"></script>
