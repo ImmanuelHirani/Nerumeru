@@ -37,3 +37,28 @@
 .input-group {
   max-width: 120px;
 }
+
+@media screen and (max-width: 920px) {
+  .card-wrapper {
+    font-size: 12px !important;
+    display: block !important;
+  }
+
+  .text-link {
+    font-size: 13px !important;
+  }
+
+  .kurir-wrapper {
+    font-size: 12px;
+    display: block !important;
+  }
+
+  .text-item {
+    font-size: 12px;
+  }
+
+  .btn-fill-data {
+    width: 100% !important;
+    font-size: 11px;
+  }
+}
