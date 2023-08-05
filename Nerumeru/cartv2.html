@@ -266,7 +266,7 @@
                           <button
                             type="button"
                             class="btn btn-default btn-number"
-                            onclick="decreaseValue()"
+                            onclick="decreaseValue('quantity1')"
                             data-type="minus"
                             data-field="quant[1]"
                           >
@@ -274,7 +274,7 @@
                           </button>
                         </span>
                         <input
-                          id="quantity"
+                          id="quantity1"
                           type="text"
                           name="quant[1]"
                           class="form-control input-number"
@@ -286,7 +286,7 @@
                           <button
                             type="button"
                             class="btn btn-default btn-number"
-                            onclick="increaseValue()"
+                            onclick="increaseValue('quantity1')"
                             data-type="plus"
                             data-field="quant[1]"
                           >
@@ -294,6 +294,7 @@
                           </button>
                         </span>
                       </div>
+
                       <a
                         href=""
                         class="text-decoration-none"
@@ -340,17 +341,17 @@
                           <button
                             type="button"
                             class="btn btn-default btn-number"
-                            onclick="decreaseValue()"
+                            onclick="decreaseValue('quantity2')"
                             data-type="minus"
-                            data-field="quant[1]"
+                            data-field="quant[2]"
                           >
                             <i class="bi bi-dash"></i>
                           </button>
                         </span>
                         <input
-                          id="quantity"
+                          id="quantity2"
                           type="text"
-                          name="quant[1]"
+                          name="quant[2]"
                           class="form-control input-number"
                           value="1"
                           min="1"
@@ -360,9 +361,9 @@
                           <button
                             type="button"
                             class="btn btn-default btn-number"
-                            onclick="increaseValue()"
+                            onclick="increaseValue('quantity2')"
                             data-type="plus"
-                            data-field="quant[1]"
+                            data-field="quant[2]"
                           >
                             <i class="bi bi-plus"></i>
                           </button>
@@ -545,21 +546,23 @@
     });
   </script>
   <script>
-    function increaseValue() {
-      var value = parseInt(document.getElementById("quantity").value, 10);
+    function increaseValue(inputId) {
+      var input = document.getElementById(inputId);
+      var value = parseInt(input.value, 10);
       value = isNaN(value) ? 0 : value;
       if (value < 10) {
         value++;
-        document.getElementById("quantity").value = value;
+        input.value = value;
       }
     }
 
-    function decreaseValue() {
-      var value = parseInt(document.getElementById("quantity").value, 10);
+    function decreaseValue(inputId) {
+      var input = document.getElementById(inputId);
+      var value = parseInt(input.value, 10);
       value = isNaN(value) ? 0 : value;
       if (value > 1) {
         value--;
-        document.getElementById("quantity").value = value;
+        input.value = value;
       }
     }
   </script>
