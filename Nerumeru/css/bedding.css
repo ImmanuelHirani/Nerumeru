@@ -17,12 +17,15 @@
   text-align: end;
 }
 
+/* detail */
 .detail .bi {
   color: #2762be;
 }
+
 .detail .badge {
   background-color: #2762be;
 }
+
 .detail a {
   background-color: #2762be;
 }
@@ -55,6 +58,10 @@
     font-size: 30px !important;
   }
 
+  .neru-two > h2 {
+    font-size: 30px !important;
+  }
+
   .detail .badge {
     font-size: 9px !important;
   }
@@ -67,12 +74,8 @@
     font-size: 15px;
   }
 
-  .neru-one a {
+  .detail a {
     font-size: 13px;
-  }
-
-  .neru-two > h2 {
-    font-size: 30px !important;
   }
 
   .instagram > h2 {
@@ -83,6 +86,7 @@
     text-align: center;
     font-size: 20px;
   }
+
   .breadcrumb {
     display: flex;
     justify-content: center;
