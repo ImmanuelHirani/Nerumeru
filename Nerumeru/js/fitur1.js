@@ -3,7 +3,7 @@ const texts = [
   "Empower Your Pet's",
   "Happy pets Simple Care",
   "Ride Towards Future",
-  "Caring for Your Belove Pets ",
+  "Caring for Your Pets ",
 ];
 
 const changingTextElement = document.getElementById("changingText");
