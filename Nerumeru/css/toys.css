@@ -26,10 +26,7 @@
   .card {
     display: block;
     margin: auto;
-  }
-
-  .card > img {
-    width: 250px;
+    width: 250px !important;
   }
 
   .neru-one {
