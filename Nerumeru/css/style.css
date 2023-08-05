@@ -198,4 +198,12 @@
   .why-us > .row {
     margin-top: 150px !important;
   }
+
+  .text-title {
+    font-size: 18px !important;
+  }
+
+  .carousel-inner {
+    margin-top: -50px !important;
+  }
 }

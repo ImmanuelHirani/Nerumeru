@@ -61,4 +61,12 @@
     width: 100% !important;
     font-size: 11px;
   }
+
+  .cart {
+    margin-top: 90px !important;
+  }
+
+  .card-title {
+    font-size: 15px;
+  }
 }
