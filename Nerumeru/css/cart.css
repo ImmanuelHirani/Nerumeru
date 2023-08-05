@@ -50,3 +50,7 @@ table {
 .carousel-item {
   transition: opacity 0.6s ease-in-out;
 }
+
+.slide-product > i:hover {
+  color: grey !important;
+}
