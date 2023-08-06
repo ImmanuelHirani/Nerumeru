@@ -12,9 +12,22 @@
   margin-top: 150px;
 }
 /* Neru Two */
-.neru-two {
+.neru-two h2 {
   margin-top: 150px;
   text-align: end;
+}
+
+/* detail */
+.detail .bi {
+  color: #2762be;
+}
+
+.detail .badge {
+  background-color: #2762be;
+}
+
+.detail a {
+  background-color: #2762be;
 }
 
 /* Instagram */
@@ -26,18 +39,15 @@
   .card {
     display: block;
     margin: auto;
+    width: 250px !important;
   }
 
-  .card > img {
-    width: 250px;
-  }
-
-  .neru-one {
+  .neru-one h2 {
     text-align: center;
   }
 
-  .neru-two {
-    text-align: center !important;
+  .neru-two h2 {
+    text-align: center;
   }
 
   .bedding > h2 {
@@ -52,6 +62,22 @@
     font-size: 30px !important;
   }
 
+  .detail .badge {
+    font-size: 9px !important;
+  }
+
+  .detail h5 {
+    font-size: 15px;
+  }
+
+  .detail p {
+    font-size: 15px;
+  }
+
+  .detail a {
+    font-size: 13px;
+  }
+
   .instagram > h2 {
     font-size: 30px !important;
   }
@@ -60,6 +86,7 @@
     text-align: center;
     font-size: 20px;
   }
+
   .breadcrumb {
     display: flex;
     justify-content: center;

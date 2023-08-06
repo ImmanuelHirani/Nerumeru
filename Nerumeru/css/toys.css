@@ -7,14 +7,32 @@
   margin-top: 50px;
 }
 
-/* Neru One */
-.neru-one {
+/* Neru Stick */
+.neru-stick {
   margin-top: 150px;
 }
-/* Neru Two */
-.neru-two {
+/* Neru Ball */
+.neru-ball h2 {
   margin-top: 150px;
   text-align: end;
+}
+
+/* Neru Ring */
+.neru-ring h2 {
+  margin-top: 150px;
+}
+
+/* detail */
+.detail .bi {
+  color: #2762be;
+}
+
+.detail .badge {
+  background-color: #2762be;
+}
+
+.detail a {
+  background-color: #2762be;
 }
 
 /* Instagram */
@@ -26,34 +44,60 @@
   .card {
     display: block;
     margin: auto;
+    width: 250px !important;
   }
 
-  .card > img {
-    width: 250px;
-  }
-
-  .neru-one {
+  .neru-stick h2 {
     text-align: center;
   }
 
-  .neru-two {
-    text-align: center !important;
+  .neru-ball h2 {
+    text-align: center;
+  }
+
+  .neru-ring h2 {
+    text-align: center;
   }
 
   .toys > h2 {
     font-size: 30px !important;
   }
 
-  .neru-one > h2 {
+  .neru-stick > h2 {
     font-size: 30px !important;
   }
 
-  .neru-two > h2 {
+  .neru-ball > h2 {
     font-size: 30px !important;
+  }
+
+  .neru-ring > h2 {
+    font-size: 30px !important;
+  }
+
+  .detail .badge {
+    font-size: 9px !important;
+  }
+
+  .detail h5 {
+    font-size: 15px;
+  }
+
+  .detail p {
+    font-size: 15px;
+  }
+
+  .detail a {
+    font-size: 13px;
   }
 
   .instagram > h2 {
     font-size: 30px !important;
+  }
+
+  .toys > .row > h2 {
+    text-align: center;
+    font-size: 20px;
   }
 
   .breadcrumb {
@@ -64,10 +108,5 @@
 
   .breadcrumb-container {
     margin-top: -20px;
-  }
-
-  .toys > .row > h2 {
-    text-align: center;
-    font-size: 20px;
   }
 }
