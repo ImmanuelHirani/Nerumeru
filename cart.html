@@ -146,23 +146,70 @@
     <main class="container">
       <section class="cart" style="margin-top: 150px">
         <div class="row">
-          <div class="col-lg-8 col-sm-12 col-md-8">
+          <div class="col-lg-8 col-sm-12 col-md-8 mb-3">
             <div class="card rounded border-0" style="width: 100%">
               <div class="card-body">
                 <hr />
                 <h5 class="card-title fw-bold text-secondary">Alamat</h5>
                 <div class="card-wrapper text-location">
-                  <p class="card-text" style="text-align: start">
+                  <p class="card-text" style="text-align: justify">
                     Tanggerang , Banten , Jalan kakap raya no 15 <br />
                     kecamatan karawaci,kelurahan Cibodas sari
                   </p>
-                  <a
-                    href=""
-                    class="text-decoration-none text-link"
+                  <!-- Button trigger modal -->
+                  <span
+                    type="button"
+                    class="btn-locations"
                     style="color: #53b62f"
-                    >Ubah
-                    <i class="bi bi-geo-alt-fill" style="color: #53b62f"></i
-                  ></a>
+                    data-bs-toggle="modal"
+                    data-bs-target="#Alamat"
+                  >
+                    Ubah
+                    <i class="bi bi-geo-alt-fill" style="color: #53b62f"></i>
+                  </span>
+
+                  <!-- Modal -->
+                  <div
+                    class="modal fade modal-lg"
+                    id="Alamat"
+                    data-bs-backdrop="static"
+                    data-bs-keyboard="false"
+                    tabindex="-1"
+                    aria-labelledby="staticBackdropLabel"
+                    aria-hidden="true"
+                  >
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h2
+                            class="modal-title fs-5 fw-bold"
+                            id="staticBackdropLabel"
+                          >
+                            Alamat Tujuan
+                          </h2>
+                          <button
+                            type="button"
+                            class="btn-close"
+                            data-bs-dismiss="modal"
+                            aria-label="Close"
+                          ></button>
+                        </div>
+                        <div class="modal-body">...</div>
+                        <div class="modal-footer">
+                          <button
+                            type="button"
+                            class="btn btn-secondary"
+                            data-bs-dismiss="modal"
+                          >
+                            Close
+                          </button>
+                          <button type="button" class="btn btn-primary">
+                            Understood
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
                 <hr />
                 <h5 class="card-title fw-bold text-secondary">
@@ -170,13 +217,61 @@
                 </h5>
                 <div class="card-wrapper">
                   <p class="card-text">0813-1480-1495</p>
-                  <a
-                    href=""
-                    class="text-decoration-none text-link"
-                    style="color: #53b62f"
-                    >Ubah
-                    <i class="bi bi-telephone-fill" style="color: #53b62f"></i
-                  ></a>
+                  <!-- Button trigger modal -->
+                  <div class="button-Phone-Wrapper">
+                    <span
+                      type="button"
+                      style="color: #53b62f"
+                      data-bs-toggle="modal"
+                      data-bs-target="#Phone"
+                    >
+                      Ubah
+                      <i
+                        class="bi bi-telephone-fill"
+                        style="color: #53b62f"
+                      ></i>
+                    </span>
+                  </div>
+
+                  <!-- Modal -->
+                  <div
+                    class="modal fade modal-lg"
+                    id="Phone"
+                    data-bs-backdrop="static"
+                    data-bs-keyboard="false"
+                    tabindex="-1"
+                    aria-labelledby="staticBackdropLabel"
+                    aria-hidden="true"
+                  >
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h1 class="modal-title fs-5" id="staticBackdropLabel">
+                            Telephone
+                          </h1>
+                          <button
+                            type="button"
+                            class="btn-close"
+                            data-bs-dismiss="modal"
+                            aria-label="Close"
+                          ></button>
+                        </div>
+                        <div class="modal-body">...</div>
+                        <div class="modal-footer">
+                          <button
+                            type="button"
+                            class="btn btn-secondary"
+                            data-bs-dismiss="modal"
+                          >
+                            Close
+                          </button>
+                          <button type="button" class="btn btn-primary">
+                            Understood
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
                 <hr />
               </div>
@@ -299,15 +394,137 @@
                         </span>
                       </div>
 
-                      <a
-                        href=""
-                        class="text-decoration-none"
-                        style="color: #53b62f"
-                        >Tulis Catatan<i
-                          class="bi bi-pen mx-2"
+                      <div class="note">
+                        <span
+                          type="button"
+                          class="text-decoration-none showTextAreaBtn bg-transparent border-0"
                           style="color: #53b62f"
-                        ></i
-                      ></a>
+                          data-popup-id="popupContainer1"
+                        >
+                          Tulis Catatan<i
+                            class="bi bi-pen mx-2"
+                            style="color: #53b62f"
+                          ></i>
+                        </span>
+
+                        <!-- Textarea popup for Item 1 -->
+                        <div
+                          class="popup-container mt-2 text-end"
+                          id="popupContainer1"
+                          style="display: none"
+                        >
+                          <textarea
+                            class="form-control noteTextArea"
+                            rows="4"
+                            maxlength="150"
+                            placeholder="Masukkan Catatan Product"
+                          ></textarea>
+                          <button
+                            class="btn btn-primary mt-2 px-5 saveNoteBtn"
+                            data-popup-id="popupContainer1"
+                          >
+                            Simpan
+                          </button>
+                        </div>
+                      </div>
+                      <hr />
+                    </div>
+                    <a
+                      href=""
+                      class="text-decoration-none"
+                      style="color: crimson; margin-left: 241px"
+                      ><i class="bi bi-trash mx-2" style="color: crimson"></i
+                      >Hapus</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card border-0 mb-3">
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <img
+                    src="./asset/img/Categories-Bedding.png"
+                    class="img rounded-start"
+                    alt="..."
+                    width="100%"
+                  />
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <div class="wrapper">
+                      <p class="card-text fw-bold text-secondary">
+                        NeruBedding - Silver Grey
+                      </p>
+                      <p>Rp.500.000</p>
+                      <p>Berat Barang : 100g</p>
+                      <div class="input-group border mb-3">
+                        <span class="input-group-btn">
+                          <button
+                            type="button"
+                            class="btn btn-default btn-number"
+                            onclick="decreaseValue('quantity2')"
+                            data-type="minus"
+                            data-field="quant[2]"
+                          >
+                            <i class="bi bi-dash"></i>
+                          </button>
+                        </span>
+                        <input
+                          id="quantity2"
+                          type="text"
+                          name="quant[2]"
+                          class="form-control input-number"
+                          value="1"
+                          min="1"
+                          max="10"
+                        />
+                        <span class="input-group-btn">
+                          <button
+                            type="button"
+                            class="btn btn-default btn-number"
+                            onclick="increaseValue('quantity2')"
+                            data-type="plus"
+                            data-field="quant[2]"
+                          >
+                            <i class="bi bi-plus"></i>
+                          </button>
+                        </span>
+                      </div>
+                      <div class="note">
+                        <!-- Item 1 -->
+                        <span
+                          type="button"
+                          class="text-decoration-none showTextAreaBtn bg-transparent border-0"
+                          style="color: #53b62f"
+                          data-popup-id="popupContainer3"
+                        >
+                          Tulis Catatan<i
+                            class="bi bi-pen mx-2"
+                            style="color: #53b62f"
+                          ></i>
+                        </span>
+
+                        <!-- Textarea popup for Item 2 -->
+                        <div
+                          class="popup-container mt-2 text-end"
+                          id="popupContainer3"
+                          style="display: none"
+                        >
+                          <textarea
+                            class="form-control noteTextArea"
+                            rows="4"
+                            maxlength="150"
+                            placeholder="Masukkan Catatan Product"
+                          ></textarea>
+                          <button
+                            class="btn btn-primary mt-2 px-5 saveNoteBtn"
+                            data-popup-id="popupContainer3"
+                          >
+                            Simpan
+                          </button>
+                        </div>
+                      </div>
 
                       <hr />
                     </div>
@@ -373,15 +590,40 @@
                           </button>
                         </span>
                       </div>
-                      <a
-                        href=""
-                        class="text-decoration-none"
-                        style="color: #53b62f"
-                        >Tulis Catatan<i
-                          class="bi bi-pen mx-2"
+                      <div class="note">
+                        <!-- Item 1 -->
+                        <span
+                          type="button"
+                          class="showTextAreaBtn bg-transparent text-start border-0"
                           style="color: #53b62f"
-                        ></i
-                      ></a>
+                          data-popup-id="popupContainer2"
+                        >
+                          Tulis Catatan<i
+                            class="bi bi-pen mx-2"
+                            style="color: #53b62f"
+                          ></i>
+                        </span>
+
+                        <!-- Textarea popup for Item 2 -->
+                        <div
+                          class="popup-container mt-2 text-end"
+                          id="popupContainer2"
+                          style="display: none"
+                        >
+                          <textarea
+                            class="form-control noteTextArea"
+                            rows="4"
+                            maxlength="150"
+                            placeholder="Masukkan Catatan Product"
+                          ></textarea>
+                          <button
+                            class="btn btn-primary mt-2 px-5 saveNoteBtn"
+                            data-popup-id="popupContainer2"
+                          >
+                            Simpan
+                          </button>
+                        </div>
+                      </div>
 
                       <hr />
                     </div>
@@ -510,7 +752,7 @@
 
                       <button
                         type="button "
-                        class="btn btn-primary fw-bold"
+                        class="btn btn-primary rounded-0 fw-bold btn-fill-data"
                         style="background-color: #2762be"
                       >
                         Bayar
@@ -534,7 +776,7 @@
       ></script>
       <div class="elfsight-app-2144b3c6-2fb8-4e32-b797-b35653d957bc"></div>
     </div>
-    <!-- Insta End -->
+    <!-- Insta end -->
 
     <footer style="background-color: #2762be; margin-top: 150px">
       <div class="container-fluid">
@@ -677,6 +919,47 @@
     // Set the slide delay after the page is loaded
     document.addEventListener("DOMContentLoaded", function () {
       setCarouselSlideDelay(100); // Set the delay time (in milliseconds)
+    });
+  </script>
+
+  <script>
+    // Fungsi untuk menampilkan atau menyembunyikan popup
+    function togglePopup(popupId) {
+      const popupContainer = document.getElementById(popupId);
+      if (popupContainer.style.display === "block") {
+        popupContainer.style.display = "none";
+      } else {
+        popupContainer.style.display = "block";
+      }
+    }
+
+    // Event listener untuk setiap tombol "Tulis Catatan" yang diklik
+    const showTextAreaBtns = document.querySelectorAll(".showTextAreaBtn");
+    showTextAreaBtns.forEach((btn) => {
+      const popupId = btn.getAttribute("data-popup-id");
+      btn.addEventListener("click", () => {
+        togglePopup(popupId);
+      });
+    });
+
+    // Event listener untuk setiap tombol "Simpan" yang diklik
+    const saveNoteBtns = document.querySelectorAll(".saveNoteBtn");
+    saveNoteBtns.forEach((btn) => {
+      const popupId = btn.getAttribute("data-popup-id");
+      btn.addEventListener("click", () => {
+        togglePopup(popupId);
+      });
+    });
+
+    // Event listener untuk membatasi jumlah karakter pada textarea
+    const noteTextAreas = document.querySelectorAll(".noteTextArea");
+    noteTextAreas.forEach((textarea) => {
+      const maxLength = 150;
+      textarea.addEventListener("input", () => {
+        if (textarea.value.length > maxLength) {
+          textarea.value = textarea.value.slice(0, maxLength);
+        }
+      });
     });
   </script>
 

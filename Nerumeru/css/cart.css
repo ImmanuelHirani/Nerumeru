@@ -47,10 +47,14 @@ input {
   margin-left: auto;
 }
 
+.saveNoteBtn {
+  background-color: #2762be;
+}
+
 @media screen and (max-width: 920px) {
   .card-wrapper {
     font-size: 12px !important;
-    display: block !important;
+    display: block;
   }
 
   .text-link {
