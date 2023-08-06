@@ -38,6 +38,15 @@
   max-width: 120px;
 }
 
+.Bank {
+  display: flex;
+  align-items: center; /* Pusatkan vertikal konten dan gambar */
+}
+
+input {
+  margin-left: auto;
+}
+
 @media screen and (max-width: 920px) {
   .card-wrapper {
     font-size: 12px !important;

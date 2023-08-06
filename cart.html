@@ -421,9 +421,103 @@
                 >
                   Total Belanja <span>Rp4000</span>
                 </h6>
-                <a class="btn btn-fill-data text-white fw-bold mt-3" href=""
-                  >Payment Checkout</a
+                <!-- Button trigger modal -->
+                <a
+                  type="button"
+                  class="btn btn-primary btn-fill-data text-white fw-bold mt-3"
+                  data-bs-toggle="modal"
+                  data-bs-target="#staticBackdrop"
                 >
+                  Payment Checkout
+                </a>
+
+                <!-- Modal -->
+                <div
+                  class="modal fade"
+                  id="staticBackdrop"
+                  data-bs-backdrop="static"
+                  data-bs-keyboard="false"
+                  tabindex="-1"
+                  aria-labelledby="staticBackdropLabel"
+                  aria-hidden="true"
+                >
+                  <div
+                    class="modal-dialog modal-dialog-centered modal-dialog-scrollable"
+                  >
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="staticBackdropLabel">
+                          Pembayaran
+                        </h1>
+                        <button
+                          type="button"
+                          class="btn-close"
+                          data-bs-dismiss="modal"
+                          aria-label="Close"
+                        ></button>
+                      </div>
+                      <div class="modal-body">
+                        <p class="fw-bold">Metode Pembayaran</p>
+
+                        <div class="Bank">
+                          <img src="./asset/img/BCA.png" alt="" width="10%" />
+                          <p class="my-auto mx-4" style="width: max-content">
+                            BCA Virtual Account
+                          </p>
+                          <input
+                            class="form-check-input my-auto border-3"
+                            type="radio"
+                            name="radioNoLabel"
+                            id="radioNoLabel1"
+                            value=""
+                            aria-label="..."
+                          />
+                        </div>
+                        <div class="Bank my-3">
+                          <img
+                            src="./asset/img/Mandiri.png"
+                            alt=""
+                            width="10%"
+                          />
+                          <p class="my-auto mx-4" style="width: max-content">
+                            Mandiri Virtual Account
+                          </p>
+                          <input
+                            class="form-check-input my-auto border-3"
+                            type="radio"
+                            name="radioNoLabel"
+                            id="radioNoLabel1"
+                            value=""
+                            aria-label="..."
+                          />
+                        </div>
+                        <hr />
+                        <p class="fw-bold my-3">Ringkasan Belanja</p>
+                        <p class="d-flex justify-content-between fw-light">
+                          Bedding-Silver Grey <span>Rp500.000</span>
+                        </p>
+
+                        <p class="d-flex justify-content-between fw-light">
+                          Ongkir <span>Rp2000</span>
+                        </p>
+                        <hr />
+                        <p
+                          class="d-flex fw-bold justify-content-between fw-light"
+                        >
+                          Total Belanja <span>Rp502.000</span>
+                        </p>
+                      </div>
+
+                      <button
+                        type="button "
+                        class="btn btn-primary fw-bold"
+                        style="background-color: #2762be"
+                      >
+                        Bayar
+                      </button>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
