@@ -43,12 +43,33 @@
   align-items: center; /* Pusatkan vertikal konten dan gambar */
 }
 
-input {
+.radio-check {
   margin-left: auto;
 }
 
 .saveNoteBtn {
   background-color: #2762be;
+}
+
+/* Gaya saat input aktif (diklik) */
+.form-control:focus {
+  border-color: #4d90fe; /* Ganti dengan warna yang diinginkan */
+  box-shadow: 0 0 10px rgba(77, 144, 254, 0.3); /* Ganti dengan gaya bayangan yang diinginkan */
+  outline: none;
+}
+
+/* Gaya ketika input di hover (opsional) */
+.form-control:hover {
+  border-color: #ccc; /* Ganti dengan warna yang diinginkan */
+}
+
+/* Gaya ketika input tidak diklik */
+.form-control {
+  transition: border-color 0.3s, box-shadow 0.3s; /* Efek transisi ketika diklik */
+  border: 1px solid #ccc; /* Ganti dengan warna batas yang diinginkan */
+  border-radius: 5px; /* Ganti dengan radius border yang diinginkan */
+  padding: 8px 12px; /* Sesuaikan dengan padding yang diinginkan */
+  font-size: 16px; /* Sesuaikan dengan ukuran font yang diinginkan */
 }
 
 @media screen and (max-width: 920px) {
